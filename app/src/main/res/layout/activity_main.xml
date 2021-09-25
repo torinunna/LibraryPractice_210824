@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:civ_border_width="2dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="프로필" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전화 연결"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="010-3494-4990" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화 걸기" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최근 활동 사진"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/recentImg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"/>
+
+
+
+</LinearLayout>
